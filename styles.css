@@ -1,4 +1,36 @@
 
+.heading{
+letter-spacing: 1px;
+}
+
+.intro-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 28%;
+}
+
+a{
+    cursor: pointer;
+}
+
+.intro-text h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.intro-text h3{
+    font-size: 2rem;
+}
+
+.intro-text p{
+    margin-left: 6px;
+    margin-top: 1vh;
+}
+
 .card {
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
@@ -12,4 +44,16 @@
 
 .h-41{
     height: 12rem;
+}
+
+.main-img img{
+    height: 90vh;
+    object-fit: cover;
+    filter: blur(1.5px);
+  -webkit-filter: blur(1.5px);
+    filter: brightness(60%);
+}
+
+nav a:hover{
+    color: #6366f1;
 }
