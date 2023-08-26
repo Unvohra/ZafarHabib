@@ -10,7 +10,7 @@ letter-spacing: 1px;
     z-index: 2;
     color: white;
     text-align: center;
-    top: 28%;
+    top: 35%;
 }
 
 a{
@@ -36,6 +36,8 @@ a{
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+    width: 27vw;
+    cursor: pointer;
 }
 
 .card:hover{
@@ -56,4 +58,9 @@ a{
 
 nav a:hover{
     color: #6366f1;
+}
+
+.section-end{
+    margin: 4vh 20vw;
+    border:1px solid #D3D3D3;
 }
