@@ -3,6 +3,16 @@
 letter-spacing: 1px;
 }
 
+
+.logo{
+    width: 3.5vw;
+    height: auto;
+}
+
+.logo-footer{
+    width: 12vw;
+    height: auto;
+}
 .intro-text{
     position: absolute;
     width: 100%;
@@ -36,9 +46,12 @@ a{
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    width: 22vw;
+    width: auto;
     cursor: pointer;
+    height: 60vh;
 }
+
+
 
 .card:hover{
     transform: scale(1.05);
@@ -61,6 +74,25 @@ nav a:hover{
 }
 
 .section-end{
-    margin: 4vh 20vw;
+    margin: 6vh 26vw;
     border:1px solid #D3D3D3;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.mx-width{
+    margin: 0 7vw 10vh 7vw;
+    padding-left: 8vw;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 98.7vw;
+
 }
