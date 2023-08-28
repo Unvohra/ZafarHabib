@@ -81,25 +81,35 @@ a{
     margin-top: 1vh;
 }
 
+.cards{
+    display: flex;
+    margin: 0 4vw;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .card {
+    display: flex;
+    flex-direction: column;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    width: auto;
     cursor: pointer;
-    height: 60vh;
+    width: 23vw;
 }
 
-
+.cards img{
+    height: 40vh;
+    width: 22vw;
+    object-fit: cover;
+}
 
 .card:hover{
     transform: scale(1.05);
 }
 
-.h-41{
-    height: 12rem;
-}
+
 
 .main-img img{
     height: 90vh;
@@ -127,12 +137,10 @@ nav a:hover, .dropdown span:hover{
     padding-left: 8vw;
 }
 
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    width: 98.7vw;
-
+.icon{
+    display: inline;
+    height: 3.4vh;
+    margin-right: 1vw;
+    object-fit: fill;
+    padding-bottom: 0.4vh;
 }
