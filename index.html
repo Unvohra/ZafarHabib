@@ -165,7 +165,7 @@
 
 
 <section data-aos="fade-up" data-aos-delay="80" data-aos-duration="1300" class="intro text-gray-600 body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="container mx-auto flex px-5 mt-8 pt-16 md:flex-row flex-col items-center">
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
         <img class="object-cover object-center rounded" alt="hero" src="assets/section1.png">
       </div>
@@ -182,9 +182,9 @@
   </section>
 
 
-<section class="text-gray-600 body-font" data-aos="fade-up" data-aos-delay="80" data-aos-duration="1300">
-    <div class="container py-16">
-      <div class="flex flex-wrap w-full mx-width mb-20">
+  <section class="text-gray-600 body-font" data-aos="fade-up" data-aos-delay="80" data-aos-duration="1300">
+    <div class="our-products__container">
+      <div class="flex flex-wrap w-full mx-width our-products">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Products</h1>
           <div class="h-1 w-20 bg-indigo-500 rounded"></div>
@@ -194,6 +194,7 @@
           </p>
       </div>
       
+    </div>
       <div class="cards">
         <div class="p-4 card">
           <div class="bg-gray-100 rounded-lg">
@@ -237,9 +238,10 @@
         </div>
       </div>
       
-    </div>
+    
     <div class="section-end"></div>
   </section>
+    
     
 <!-- <section data-aos="fade-up" data-aos-delay="80" data-aos-duration="1300" class="text-gray-600 body-font">
   <div class="container px-5 py-16 mx-auto">
@@ -294,32 +296,32 @@
 </section> -->
 
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-16 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-10">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
     </div>
 
-  <div class="container px-5 py-24 mx-auto">
+  <div class="container px-5 mx-auto">
     <div class="flex flex-wrap -m-4 text-center">
       <div class="p-4 sm:w-1/5 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">300</h2>
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" id="staff"></h2>
         <p class="leading-relaxed">WORKING STAFF</p>
       </div>
       <div class="p-4 sm:w-1/5 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">325,000</h2>
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" id="space"></h2>
         <p class="leading-relaxed">SQUARE FEET FACTORY SPACE</p>
       </div>
       <div class="p-4 sm:w-1/5 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">15,000</h2>
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" id="capacity"></h2>
         <p class="leading-relaxed">TONS OF ANNUAL PRODUCTION CAPACITY</p>
       </div>
       <div class="p-4 sm:w-1/5 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4,000</h2>
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" id="stock"></h2>
         <p class="leading-relaxed">TONS OF STOCK IN INVENTORY HELD AT A TIME</p>
       </div>
       <div class="p-4 sm:w-1/5 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">82</h2>
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" id="cartons"></h2>
         <p class="leading-relaxed">MILLION CARTONS CONVERTED MONTHLY</p>
       </div>
     </div>
@@ -328,7 +330,7 @@
 </section>
 
 <section data-aos="fade-up" data-aos-delay="80" data-aos-duration="1300" class="text-gray-600 body-font">
-  <div class="container flex flex-wrap px-5 pt-8 pb-16 mx-auto items-center">
+  <div class="container flex flex-wrap px-5 pt-8 mb-6 pb-10 mx-auto items-center">
     <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our customers make us great</h1>
       <p class="leading-relaxed text-base">Here at Zafar Habib Packaging we focus on markets where technology, innovation, and capital can unlock long-term value.</p>
@@ -793,6 +795,141 @@
     </footer>
     <!-- Tailwind Elements JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-    <script>AOS.init();</script>
+    <script>AOS.init();
+     // Get a reference to the footer element
+const staff = document.getElementById("staff");
+const space = document.getElementById("space");
+const capacity = document.getElementById("capacity");
+const stock = document.getElementById("stock");
+const cartons = document.getElementById("cartons");
+
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+
+let isCounting = false;
+let staffCounter = 0;
+let spaceCount = 0;
+let capacityCount = 0;
+let stockCount = 0;
+let cartonCount = 0;
+// Function to start the counter
+function startCounter() {
+  
+    if (!isCounting) {
+      // biniding all functions
+      spaceCounter();
+    
+        isCounting = true;
+        const interval = setInterval(() => {
+            if (staffCounter <= 300) {
+                staff.textContent = staffCounter;
+                staffCounter++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 5); 
+    }
+}
+// space counter
+function spaceCounter() {
+    if (!isCounting) {
+      capacityCounter();
+        isCounting = true;
+        const spaceInterval = setInterval(() => {
+            if (spaceCount <= 30000) {
+                // Update the counter in your footer
+                
+                space.textContent = spaceCount;
+                spaceCount += 250;
+            } else {
+                clearInterval(spaceInterval);
+            }
+        }, 5); // Adjust the interval for the desired animation speed
+    }
+}
+// capacity counter
+function capacityCounter(){
+  
+  if (!isCounting) {
+    stockCounter();
+        isCounting = true;
+        const spaceInterval = setInterval(() => {
+            if (capacityCount <= 15000) {
+                // Update the counter in your footer
+                
+                capacity.textContent = capacityCount;
+                capacityCount += 100;
+            } else {
+                clearInterval(spaceInterval);
+            }
+        }, 5); // Adjust the interval for the desired animation speed
+    }
+}
+// stock counter
+function stockCounter(){
+  
+  if (!isCounting) {
+    cartonsCounter();
+        isCounting = true;
+        const spaceInterval = setInterval(() => {
+            if (stockCount <= 4000) {
+                // Update the counter in your footer
+                
+                stock.textContent = stockCount;
+                stockCount += 50;
+            } else {
+                clearInterval(spaceInterval);
+            }
+        }, 5); // Adjust the interval for the desired animation speed
+    }
+}
+// cartons counter
+function cartonsCounter(){
+  if (!isCounting) {
+        isCounting = true;
+        const spaceInterval = setInterval(() => {
+            if (cartonCount <= 82) {
+                cartons.textContent = cartonCount;
+                cartonCount += 1;
+            } else {
+                clearInterval(spaceInterval);
+            }
+        }, 10); // Adjust the interval for the desired animation speed
+    }
+}
+
+
+// Check if the footer is in the viewport when the page loads
+window.addEventListener("load", () => {
+    if (isElementInViewport(staff)) {
+        startCounter();
+    }
+});
+
+// Check if the footer is in the viewport when the user scrolls
+window.addEventListener("scroll", () => {
+    if (isElementInViewport(staff)) {
+        startCounter();
+        
+    } else {
+        // Reset the counter if the footer is not in the viewport
+         staffCounter = 0;
+         spaceCount = 0;
+         capacityCount = 0;
+         stockCount = 0;
+         cartonCount = 0;
+        isCounting = false;
+    }
+});
+</script>
 </body>
 </html>
