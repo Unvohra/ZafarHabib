@@ -121,6 +121,14 @@
         .card{
             width: 70%;
         }
+
+        .logo{
+            width: 10vw;
+        }
+
+        .intro-text h1{
+            font-size: 3.3rem;
+        }
     }
     /* our products */
     .our-products__container{
@@ -136,6 +144,7 @@
     
     .main-img img{
         height: 90vh;
+        width: 100%;
         object-fit: cover;
         filter: blur(1.5px);
       -webkit-filter: blur(1.5px);
@@ -163,9 +172,9 @@
     
     .icon{
         display: inline;
-        height: 3.4vh;
-        margin-right: 1vw;
+        height: 3.3vh;
+        margin-right: 1.5vw;
         object-fit: fill;
-        padding-bottom: 0.4vh;
+        padding-bottom: .6vh;
     }
     
