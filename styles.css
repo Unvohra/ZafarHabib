@@ -72,6 +72,11 @@
         color: white;
     }
     
+.intro-text h2{
+    font-size: 4rem;
+    padding-top: 4vh;
+}
+
     .intro-text h3{
         font-size: 2rem;
     }
@@ -151,12 +156,22 @@
         filter: brightness(60%);
     }
     
+    .wu-main img{
+        
+        filter: blur(0px);
+        width: 100%; 
+        object-fit: cover; 
+        height: 60vh;
+        filter: brightness(80%);
+    }
+    
+
     nav a:hover, .dropdown span:hover{
         color: black;
     }
     
     .section-end{
-        margin: 10rem 26vw;
+        margin: 6rem 26vw;
         border:1px solid #D3D3D3;
     }
     
