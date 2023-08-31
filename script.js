@@ -66,17 +66,37 @@ lastselected=x;
 
   function foo()
   {
-    var fruit = getParameterByName('fruit');
-console.log(fruit);
-lastselected = document.getElementById("OffsetSection");
-var LabelsSection = document.getElementById("LabelsSection");
-var HangersSection = document.getElementById("HangersSection");
-var PackingsSection = document.getElementById("PackingsSection");
+     //document.getElementById("btn2").click();
+    const sections = ["OffsetSection", "LabelsSection", "HangersSection","PackingsSection"];
+   
+    var arrayLength = sections.length;
 
-console.log(LabelsSection);
-LabelsSection.style.display="none";
-HangersSection.style.display="none";
-PackingsSection.style.display="none";
+    
+    var tab = getParameterByName('tab');
+console.log(tab);
+
+for (var i = 0; i < arrayLength; i++) {
+  console.log(sections[i]);
+  if(sections[i]===tab)
+  {
+    document.getElementById(sections[i]).style.display="display";
+    lastselected = document.getElementById(sections[i]);
+  }
+  else
+  {
+  document.getElementById(sections[i]).style.display="none";
+  }//Do something
+}
+
+//lastselected = document.getElementById("OffsetSection");
+//var LabelsSection = document.getElementById("LabelsSection");
+//var HangersSection = document.getElementById("HangersSection");
+//var PackingsSection = document.getElementById("PackingsSection");
+
+//console.log(LabelsSection);
+//LabelsSection.style.display="none";
+//HangersSection.style.display="none";
+//PackingsSection.style.display="none";
   }
 
   function getParameterByName(name, url) {
