@@ -209,9 +209,8 @@ nav a:hover,
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 6vw;
-    margin: 6vh 11vw;
-
+    column-gap: 7.3vw;
+    padding: 2vh 0;
 }
 
 .mt-12 {
@@ -229,4 +228,38 @@ nav a:hover,
 .thumbnail:hover {
     opacity: 60%;
 
+}
+
+/*Products page buttons*/
+.btn {
+    border-radius: 9999px;
+    padding: 0.625rem 1.25rem;
+    margin-right: .75rem;
+    margin-bottom: .75rem;
+    border: solid white .5px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.btn:hover {
+    border: solid lightgrey .5px;
+}
+
+.selected {
+    border: solid blue 1px;
+    --tw-text-opacity: 1;
+    color: rgb(29 78 216 / var(--tw-text-opacity));
+    border-radius: 9999px;
+    padding: 0.625rem 1.25rem;
+    margin-right: .75rem;
+    margin-bottom: .75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.selected:hover {
+    background-color: blue;
+    color: white;
 }

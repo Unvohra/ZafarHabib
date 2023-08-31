@@ -46,24 +46,19 @@
     </div>
   </header>
   <section data-aos="fade-up" data-aos-delay="80" data-aos-duration="1300">
-    <div class="products container px-5 py-8 mx-auto">
-      <h1>Products</h1>
-      <p class="leading-relaxed text-center text-base">One Stop Shop for all kinds of Packaging.</p>
+    <div class="products container py-8 mx-auto">
       <div class="cat-flex">
         <div>
-          <p class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Categories</p>
+          <p class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Products</p>
           <div class="my-2 h-1 w-20 bg-indigo-500 rounded"></div>
+          <p class="leading-relaxed text-center text-base">One Stop Shop for all kinds of Packaging.</p>
         </div>
         <div class="flex items-center justify-center flex-wrap">
-          <button onclick="ShowOffset()" type="button"
-            class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Offset
+          <button id="btn1" onclick="ShowOffset(); btnClicked(this.id)" type="button" class="selected ">Offset
             Printing</button>
-          <button onclick="ShowPacking()" type="button"
-            class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Packing</button>
-          <button onclick="ShowLabels()" type="button"
-            class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Labels</button>
-          <button onclick="Showhangers()" type="button"
-            class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Hangers</button>
+          <button id="btn2" onclick="ShowPacking(); btnClicked(this.id) " type="button" class="btn">Packing</button>
+          <button id="btn3" onclick="ShowLabels(); btnClicked(this.id)" type="button" class="btn">Labels</button>
+          <button id="btn4" onclick="Showhangers(); btnClicked(this.id)" type="button" class="btn">Hangers</button>
         </div>
       </div>
     </div>
@@ -719,7 +714,16 @@
       </div>
     </div>
   </footer>
-  <script>AOS.init()</script>
+  <script>AOS.init()
+    function btnClicked(clickedId) {
+      document.getElementById("btn1").className = 'btn'
+      document.getElementById("btn2").className = 'btn'
+      document.getElementById("btn3").className = 'btn'
+      document.getElementById("btn4").className = 'btn'
+      document.getElementById(clickedId).className = 'selected';
+    };
+
+  </script>
 </body>
 
 </html>
