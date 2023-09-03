@@ -66,9 +66,10 @@ lastselected=x;
 
   function foo()
   {
-     //document.getElementById("btn2").click();
-    const sections = ["OffsetSection", "LabelsSection", "HangersSection","PackingsSection"];
-   
+     //document.getElementById("btn2").focus();
+    const sections = ["OffsetSection","PackingsSection", "LabelsSection", "HangersSection"];
+    const btns = ["btn1", "btn2", "btn3","btn4"];
+    var btn;
     var arrayLength = sections.length;
 
     
@@ -81,6 +82,8 @@ for (var i = 0; i < arrayLength; i++) {
   {
     document.getElementById(sections[i]).style.display="display";
     lastselected = document.getElementById(sections[i]);
+    btn= btns[i];
+    btnClicked(btn);
   }
   else
   {
@@ -108,4 +111,10 @@ for (var i = 0; i < arrayLength; i++) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
+function btnClicked(clickedId) {
+  document.getElementById("btn1").className = 'btn'
+  document.getElementById("btn2").className = 'btn'
+  document.getElementById("btn3").className = 'btn'
+  document.getElementById("btn4").className = 'btn'
+  document.getElementById(clickedId).className = 'selected';
+};
