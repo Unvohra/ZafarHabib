@@ -50,7 +50,7 @@
 
 .arrow {
     display: inline;
-    font-size: 0.7rem;
+    font-size: 1.4rem;
 }
 
 .intro-text {
@@ -185,9 +185,13 @@ a {
     filter: brightness(80%);
 }
 
+.arrow {
+    position: relative;
+    right: 1.75px;
+    top: -3px;
+}
 
-nav a:hover,
-.dropdown span:hover {
+nav a:hover {
     color: black;
 }
 
