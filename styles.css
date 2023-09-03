@@ -112,10 +112,19 @@ a {
     cursor: pointer;
     /* width: 23vw; */
     width: 24%;
+
+}
+
+.card .card-text {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
 }
 
 .cards img {
-    height: 40vh;
+    height: 38vh;
     width: 100%;
     object-fit: cover;
 }
