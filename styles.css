@@ -223,7 +223,7 @@ nav a:hover {
     justify-content: flex-start;
     align-items: center;
     column-gap: 7.3vw;
-    padding: 2vh 0;
+    padding: 2vh 2vw;
 }
 
 .mt-12 {
