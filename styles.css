@@ -2,6 +2,14 @@
     letter-spacing: 1px;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+a {
+    font-size: 1.1rem;
+}
 
 .logo {
     width: 5vw;
@@ -36,7 +44,7 @@
     margin: 1vh;
     padding: 1vh .5vw;
     border-radius: 3px;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -61,6 +69,7 @@
     color: white;
     text-align: center;
     top: 35%;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 a {
@@ -69,7 +78,7 @@ a {
 
 .intro-text h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 7rem;
 
 }
 
@@ -79,13 +88,8 @@ a {
     text-align: center;
 }
 
-.intro-text h2 {
-    font-size: 4rem;
-    padding-top: 4vh;
-}
-
 .intro-text h3 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .intro-text p {
@@ -196,7 +200,7 @@ nav a:hover {
 }
 
 .section-end {
-    margin: 8rem 26vw;
+    margin: 10vh 26vw;
     border: 1px solid #D3D3D3;
 }
 
