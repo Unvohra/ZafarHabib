@@ -82,6 +82,13 @@ a {
 
 }
 
+.intro-text h2 {
+    font-size: 5rem;
+    padding-top: 5vh;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
 .products h1 {
     color: black;
     font-size: 3.5rem;
@@ -97,26 +104,30 @@ a {
     margin-top: 1vh;
 }
 
+.card h2 {
+    color: rgb(99 102 241);
+}
+
 .cards {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     /* margin: 0 4vw; */
     flex-wrap: wrap;
+    column-gap: 2vw;
     width: 100%;
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     /* width: 23vw; */
-    width: 24%;
-
+    width: 22%;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
 }
 
 .card .card-text {
@@ -128,13 +139,45 @@ a {
 }
 
 .cards img {
-    height: 38vh;
+    height: 34vh;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5vh;
+}
+
+
+.card-btn {
+    position: absolute;
+    background-color: rgb(99 102 241);
+    color: white;
+    border-radius: 20px;
+    height: 4.5vh;
+    width: max-content;
+    padding: .6vh 2vw;
+    z-index: 100;
+    top: 34.2vh;
+    left: 11vh;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.card:hover .zoom {
+    transform: scale(1.4);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /* media query -> card */
@@ -306,4 +349,10 @@ nav a:hover {
 
 .w-70 {
     width: 70vw;
+}
+
+.division-img {
+    height: 65vh;
+    margin-top: 2vh;
+    border-radius: 5px;
 }
