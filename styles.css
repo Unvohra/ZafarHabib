@@ -235,8 +235,8 @@ a {
 
 .arrow {
     position: absolute;
-    right: -16px;
-    top: -6px;
+    right: -.8vw;
+    top: -.8vh;
     display: inline;
     font-size: 1.4rem;
 }
