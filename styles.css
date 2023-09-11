@@ -234,8 +234,8 @@ a {
 
 .arrow {
     position: relative;
-    right: .2vw;
-    top: -.45vh;
+    right: 3px;
+    top: -6px;
 }
 
 nav a:hover {
