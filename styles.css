@@ -160,13 +160,21 @@ a {
     height: 4.5vh;
     width: max-content;
     padding: .6vh 2vw;
+    font-size: 14px;
     z-index: 100;
-    top: 34.2vh;
-    left: 11vh;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
 
 }
 
+.card-btn:hover {
+    background-color: rgb(67, 69, 166);
+}
 
 .card:hover .zoom {
     transform: scale(1.4);
