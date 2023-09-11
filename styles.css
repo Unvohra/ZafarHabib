@@ -56,10 +56,6 @@ a {
     background-color: whitesmoke;
 }
 
-.arrow {
-    display: inline;
-    font-size: 1.4rem;
-}
 
 .intro-text {
     position: absolute;
@@ -232,10 +228,17 @@ a {
     filter: brightness(80%);
 }
 
-.arrow {
+.a-products {
     position: relative;
-    right: 3px;
+    margin-right: 1rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -16px;
     top: -6px;
+    display: inline;
+    font-size: 1.4rem;
 }
 
 nav a:hover {
