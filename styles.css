@@ -365,3 +365,17 @@ nav a:hover {
 .division-img {
     max-height: 70vh;
 }
+
+.divisions-main {
+    background: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(0, 0, 0, 0)),
+        url(assets/divisions-main.jpg);
+    background-size: cover;
+
+
+}
+
+
+footer p,
+footer a {
+    font-size: 14px;
+}
