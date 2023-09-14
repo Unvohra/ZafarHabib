@@ -122,7 +122,8 @@ a {
     cursor: pointer;
     /* width: 23vw; */
     width: 22%;
-    padding: 1.2rem 1rem;
+    height: 50vh;
+    padding: 2vh 1.2vw;
     border-radius: 10px;
 }
 
@@ -135,7 +136,7 @@ a {
 }
 
 .cards img {
-    height: 34vh;
+    height: 36vh;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
@@ -162,7 +163,7 @@ a {
     padding: .6vh 2vw;
     font-size: 14px;
     z-index: 100;
-    top: 60%;
+    top: 28vh;
     left: 50%;
     -ms-transform: translateY(-60%);
     transform: translateY(-60%);
