@@ -121,10 +121,10 @@ a {
     cursor: pointer;
     /* width: 23vw; */
     width: 22%;
-    height: 52vh;
+    height: 60vh;
     padding: 2vh 1vw;
     border-radius: 10px;
-    row-gap: 1vh;
+    row-gap: .5vh;
 }
 
 .card .card-text {
@@ -136,7 +136,7 @@ a {
 }
 
 .cards img {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
@@ -149,7 +149,7 @@ a {
 .img-wrapper {
     overflow: hidden;
     border-radius: 8px;
-    margin-bottom: 1.5vh;
+    margin-bottom: 1vh;
 }
 
 
