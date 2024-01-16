@@ -91,6 +91,12 @@ a {
     text-align: center;
 }
 
+.p-title {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 .intro-text h3 {
     font-size: 4rem;
 }
